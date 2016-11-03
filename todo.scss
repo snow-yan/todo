@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+     background: #29275F;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id："172535" */
+  src: url('http://at.alicdn.com/t/font_tqif2m4zayw7mn29.eot');
+  src: url('http://at.alicdn.com/t/font_tqif2m4zayw7mn29.eot') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_tqif2m4zayw7mn29.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_tqif2m4zayw7mn29.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_tqif2m4zayw7mn29.svg#iconfont') format('svg');
+}
+$size:320px,360px,375px,384px,412px,414px;
+$resign-size:750px;
+@each $i in $size{
+     @media screen and (min-width:#{$i}){
+        html{
+            font-size: 100 * $i/ $resign-size px;
+        }
+    }
+
+}
+.header{
+    width:100%;
+    height: 0.6rem;
+    background: #29275F;
+    position: relative;
+    .header-nav1{
+        float: left;
+        height: 100%;
+        padding-left: 0.20rem;
+       & a{
+            width: 100%;
+            height: 100%;
+            line-height: 0.6rem;    
+            font-family: "iconfont";
+            color: #00CCFF;
+            text-shadow: 0 0 15px #00CCFF;
+            font-size: 0.26rem;
+        }
+    }
+    .head-nav2{
+        font-size: 0.16rem;
+        color: #00CCFF;
+        text-shadow: 0 0 15px #00CCFF;
+        position: absolute;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        width: 1rem;
+        left:0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        margin:auto auto;
+    
+    }
+    .head-nav3{
+        float:right;
+        height: 100%;
+        line-height: 0.6rem;
+        padding-right: 0.2rem;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 0.6rem;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: #00CCFF;
+            text-shadow: 0 0 15px #00CCFF;
+            
+        }
+        
+    }    
+}
+.thing{
+    width: 100%;  
+    height:100%;  
+    background: #29275F;
+    .kuai{
+        height:auto;
+        width: 92.5%;  
+        margin:  0 auto; 
+        padding-left: 0.2rem;
+        margin-bottom: 0.1rem;
+        background: #CF1AE9;
+        border-radius:0.06rem;
+        .kuai1{
+            height: 0.725rem;
+            width: 100%;
+            position: relative;
+        }
+        .thing-left{
+            float: left;
+            width: 0.24rem;
+            height: 100%;
+            .circle{
+                float: left;
+                width: 0.24rem;
+                height: 0.24rem;
+                border-radius:50%;
+                border:1px solid #fff;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                text-align: center;
+                line-height: 0.24rem;
+                background: #C4EFE5;
+                .dui{
+                    font-family: "iconfont";
+                    font-size:20px;        
+                    color: #2B2075;
+                    display: none;
+                }
+            }
+
+        }
+        .content{
+            float: left;
+            width: 2.5rem;
+            height: 0.625rem;            
+            margin-left: 0.18rem;    
+            overflow: hidden;           
+           
+            h4{
+                color: #F7EAFA;
+                font-size: 0.12rem;
+                opacity: 0.5;                  
+                
+                             
+            }
+            .line{
+                text-decoration: line-through;
+                opacity: 0.4;
+            }
+        }      
+        
+    }
+}
+ #h3{
+    color: #FFFFF1;
+    font-size: 0.18rem;
+    padding-top: 0.15rem;
+    opacity: 0.9;                  
+    }
+.footer{
+    height: 0.6rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;   
+    .footer-nav{
+        width: 25%;
+        height: 100%;
+        float: left;  
+        position: relative;
+        text-align: center;
+        .change1{
+            width: 85%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0; bottom: 0;
+            margin: auto auto;
+            height: 0.07rem;
+            border-radius: 0.03rem;
+            background:linear-gradient(to right,transparent,#CD0EED,#8B3CFB,#56CFC4);
+            box-shadow: 0 0 0.01rem #CD0EED;
+            
+            
+        }  
+        .change2{
+            background: #B90FDD;
+        }  
+         .change3{
+            background: #8D12F6;
+        }  
+         .change4{
+            background: #47CEB1;
+        }   
+        .all{
+            width: 100%;
+            color: #5F7EA5;
+            line-height: 0.9rem;
+           
+        } 
+    } 
+    .show{
+        width:0.4rem;
+        height: 0.4rem;
+        border-radius: 50%;
+        background: #107EE0;
+        position:fixed;
+        bottom: 0.2rem;
+        right: 0.02rem;
+        a{
+            display: block;
+            width: 100%;
+            height:100%;
+            line-height: 0.4rem;
+            text-align: center;
+            font-size: 0.40rem;
+            color: #fff;
+            
+        }
+    }
+}
+.hidden{
+    width: 80%;
+    height: 1.4rem;
+    background:#00CCFF;  
+    box-shadow: 0 0 0.5rem #385068;
+    position: absolute;
+    top: 0;bottom: 0;
+    right: 0;left: 0;
+    margin: auto auto;
+    line-height: 1.4rem;
+    display: none;
+    .hidden-input{
+        width: 90%;
+        height:0.5rem;
+        border:0;
+        background: #00CCFF;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+        outline:none;
+        margin-left: 5%;
+    }
+    .add{
+        font-family: "iconfont";
+        font-size: 0.3rem;
+        color: #fff;
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0.2rem;
+    }     
+}
+
+
